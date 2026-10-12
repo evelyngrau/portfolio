@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YR2N5G4THK"></script>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag("js", new Date());
+    gtag("config", "G-YR2N5G4THK");
+  </script>
+
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>Evelyn Grau | QA Engineer Portfolio</title>
+
+  <meta
+    name="description"
+    content="QA Engineer portfolio by Evelyn Grau featuring manual testing, API testing, automation, SQL validation and AI-assisted testing projects."
+  />
+
+  <meta name="robots" content="index, follow" />
+
+  <link
+    rel="canonical"
+    href="https://evelyngrau.github.io/portfolio"
+  />
+
+  <!-- Favicons: conservar las rutas que ya funcionaban -->
+  <link
+    rel="icon"
+    href="./assets/icons/favicon.ico?v=3"
+    type="image/x-icon"
+  />
+
+  <link
+    rel="shortcut icon"
+    href="./assets/icons/favicon.ico?v=3"
+    type="image/x-icon"
+  />
+
+  <link
+    rel="apple-touch-icon"
+    href="./assets/icons/favicon-eg-neon.png?v=3"
+  />
+
+  <!-- Vista previa al compartir -->
+  <meta property="og:type" content="website" />
+
+  <meta
+    property="og:title"
+    content="Evelyn Grau | QA Engineer Portfolio"
+  />
+
+  <meta
+    property="og:description"
+    content="Manual testing, API testing, automation, SQL validation and AI-assisted testing projects."
+  />
+
+  <meta
+    property="og:url"
+    content="https://evelyngrau.github.io/"
+  />
+
+  <!-- Dejar esta línea solo si la imagen realmente existe -->
+  <meta
+    property="og:image"
+    content="https://evelyngrau.github.io/assets/portfolio-preview.png"
+  />
+
+  <!-- Conservar la ruta original del CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Mobile certificate swipe support -->
+  <style>
+    .certificate-swipe-hint {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      .certificates-section .diploma-carousel {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+      }
+
+      .certificates-section .diploma-track {
+        display: flex !important;
+        width: 100% !important;
+        max-width: 100%;
+        gap: 0 !important;
+        overflow-x: auto !important;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        overscroll-behavior-inline: contain;
+        touch-action: pan-x;
+        transform: none !important;
+        animation: none !important;
+        scrollbar-width: none;
+      }
+
+      .certificates-section .diploma-track::-webkit-scrollbar {
+        display: none;
+      }
+
+      .certificates-section .diploma-slide {
+        flex: 0 0 100% !important;
+        width: 100% !important;
+        min-width: 100% !important;
+        box-sizing: border-box;
+        scroll-snap-align: center;
+        scroll-snap-stop: always;
+      }
+
+      .certificates-section .diploma-slide img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        max-height: 72vh;
+        margin: 0 auto;
+        object-fit: contain;
+        pointer-events: none;
+        user-select: none;
+        -webkit-user-drag: none;
+      }
+
+      .certificate-swipe-hint {
+        display: block;
+        margin: 0.75rem 0 1rem;
+        text-align: center;
+        font-size: 0.85rem;
+        opacity: 0.75;
+      }
+    }
+  </style>
+
+  <!-- Gallery state fix: keeps the existing design and only guarantees visibility -->
+  <style id="gallery-state-fix">
+    .gallery-modal {
+      display: none;
+    }
+
+    .gallery-modal.active {
+      display: flex !important;
+    }
+
+    body.gallery-open {
+      overflow: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="navbar">
+    <a href="#about" class="logo">Evelyn Grau</a>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#qa">QA</a>
+      <a href="#automation">AI</a>
+      <a href="#creative">Creative</a>  
+      <a href="#certificates">Certificates</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ABOUT -->
+    <section id="about" class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">QA + Automation + AI</p>
+
+        <h1 class="magic-title">
+          Building quality with strategy, automation and AI.
+        </h1>
+
+        <p class="hero-text">
+          Hi! I’m Evelyn Grau, a QA Analyst with 4+ years of Manual QA experience.
+          I’m building a public portfolio focused on QA documentation, automation,
+          AI, Cypress, APIs and more.
+          Currently working directly on LLM Quality and AI Testing.
+        </p>
+
+        <div class="hero-tags">
+          <span>Manual QA with IA</span>
+          <span>Cypress</span>
+          <span>n8n</span>
+          <span>Postman</span>
+          <span>Jira</span>
+          <span>Agile teams</span>
+          <span>LLMs</span>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#qa" class="button primary">View Portfolio</a>
+          <a href="#contact" class="button secondary">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAIN AREAS -->
+    <section class="section compact-section">
+      <div class="area-grid">
+        <a href="#qa" class="area-card neon-card">
+          <div class="icon">✓</div>
+          <h3>QA Projects</h3>
+          <p>
+            Test cases, bug reports, evidence, test plans, Cypress, Postman and ISTQB practice.
+          </p>
+        </a>
+
+        <a href="#automation" class="area-card neon-card">
+          <div class="icon">⚙</div>
+          <h3>AI</h3>
+          <p>
+            n8n workflows, process optimization, AI-assisted documentation and productivity automations.
+          </p>
+        </a>
+
+        <a href="#certificates" class="area-card neon-card">
+          <div class="icon">✦</div>
+          <h3>Certificates</h3>
+          <p>
+            Comic projects, visual storytelling, AI-assisted images and artistic experiments.
+          </p>
+        </a>
+      </div>
+    </section>
+
+  <!-- QA PROJECTS -->
+<section id="qa" class="section">
+  <div class="section-title">
+    <p class="eyebrow">Testing & Quality</p>
+    <h2>QA Projects</h2>
+    <p>
+      Real-world QA projects demonstrating test strategy, documentation, bug reporting,
+      automation and quality impact.
+    </p>
+  </div>
+
+  <div class="project-grid">
+    <!-- PROJECT 1 -->
+    <article class="project-card project-card-with-image neon-card">
+    <div
+      class="project-preview gallery-trigger"
+      data-gallery="xacademy"
+      role="button"
+      tabindex="0"
+      aria-label="Open XAcademy project screenshots"
+    >
+      <img
+        src="assets/projects/xacademy-main.png"
+        alt="XAcademy QA Project dashboard preview"
+      />
+    
+    </div>
+  <div
+    class="project-thumbnails gallery-trigger"
+    data-gallery="xacademy"
+    role="button"
+    tabindex="0"
+    aria-label="Open XAcademy project screenshots"
+  >
+    <img src="assets/projects/xacademy-testcases.png" alt="Test cases preview" />
+    <img src="assets/projects/xacademy-trello.png" alt="Trello board preview" />
+    <img src="assets/projects/xacademy-bug-report.png" alt="Bug report preview" />
+  </div>
+      
+
+      <p class="project-label">Featured Project</p>
+      <h3>XAcademy QA Project</h3>
+
+      <p>
+        Manual and Automation QA project focused on test case design, functional testing,
+        bug reporting, evidence organization and workflow documentation.
+      </p>
+
+      <ul class="project-checklist">
+        <li>Designed test cases and execution evidence</li>
+        <li>Automated test cases with Cypress</li>
+        <li>Organized QA documentation in Google Sheets</li>
+        <li>Used Trello to track issues and workflow status</li>
+      </ul>
+
+      
+      <div class="project-links">
+        <a href="https://github.com/evelyngrau/XA-Academy-automationintesting" target="_blank">GitHub</a>
+        <a href="https://docs.google.com/spreadsheets/d/1tG6uC9DuFQSa_L11iv4Vsd6kXKVeJTqqbBg8dBqoQ60/edit?usp=sharing" target="_blank">Excel</a>
+        <a href="https://trello.com/invite/b/6a32c0a1a2be629977833ffb/ATTIf10850aed0f2d29dc3a5596d479d1e6812D81004/cypress-automationintesting-evelyn-grau" target="_blank">Trello</a>
+      </div> 
+      
+    </article>
+    
+    <!-- PROJECT 2 -->
+    <article class="project-card project-card-with-image neon-card">
+      <div
+        class="project-preview gallery-trigger"
+        data-gallery="cypress"
+        role="button"
+        tabindex="0"
+        aria-label="Open Cypress project screenshots"
+      >
+        <img
+          src="assets/projects/cypress-main.png"
+          alt="Cypress Automation Practice preview"
+        />
+      </div>
+
+      <div
+        class="project-thumbnails gallery-trigger"
+        data-gallery="cypress"
+        role="button"
+        tabindex="0"
+        aria-label="Open Cypress project screenshots"
+      >
+        <img src="assets/projects/cypress-code.png" alt="Cypress code preview" />
+        <img src="assets/projects/cypress-report.png" alt="Cypress report preview" />
+        <span>+1</span>
+      </div>
+
+      <p class="project-label">In Progress</p>
+      <h3>Cypress Automation Practice</h3>
+
+      <p>
+        E2E testing practice for key user flows, validation scenarios and regression testing.
+      </p>
+
+      <ul class="project-checklist">
+        <li>Building automated test cases</li>
+        <li>Practicing JavaScript and Cypress commands</li>
+        <li>Preparing reusable test structure</li>
+      </ul>
+
+      <div class="project-links">
+        <a href="#" target="_blank">GitHub</a>
+        <a href="#" target="_blank">Screenshots</a>
+        <a href="#" target="_blank">Postman</a>
+      </div>
+    </article>
+
+    <!-- PROJECT 3 -->
+    <article class="project-card project-card-with-image neon-card">
+      <div
+        class="project-preview gallery-trigger"
+        data-gallery="postman"
+        role="button"
+        tabindex="0"
+        aria-label="Open Postman project screenshots"
+      >
+        <img
+          src="assets/projects/postman-main.png"
+          alt="Postman API Testing preview"
+        />
+      </div>
+
+      <div
+        class="project-thumbnails gallery-trigger"
+        data-gallery="postman"
+        role="button"
+        tabindex="0"
+        aria-label="Open Postman project screenshots"
+      >
+        <img src="assets/projects/postman-collection.png" alt="Postman collection preview" />
+        <img src="assets/projects/postman-response.png" alt="API response preview" />
+        <span>+1</span>
+      </div>
+
+      <p class="project-label">In Progress</p>
+      <h3>Postman / API Testing</h3>
+
+      <p>
+        API testing practice with collections, requests, assertions and JSON documentation.
+      </p>
+
+      <ul class="project-checklist">
+        <li>Testing API requests and responses</li>
+        <li>Validating status codes and JSON structure</li>
+        <li>Documenting request and response behavior</li>
+      </ul>
+
+      <div class="project-links">
+        <a href="#" target="_blank">GitHub</a>
+        <a href="#" target="_blank">Screenshots</a>
+        <a href="#" target="_blank">Postman</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+    <!-- AI AUTOMATION -->
+    <section id="automation" class="section">
+      <div class="section-title">
+        <p class="eyebrow">AI + Workflows</p>
+        <h2>LLM Quality and AI Testing</h2>
+        <p>
+          Workflow automation projects focused on reducing repetitive work and improving visibility.
+        </p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card neon-card">
+          <p class="project-label">n8n Workflow</p>
+          <h3>Bug Tracking Automation</h3>
+
+          <p>
+            Workflow designed to connect failed test cases with Trello cards,
+            improving bug visibility and reducing manual tracking.
+          </p>
+
+          <ul>
+            <li>Google Sheets trigger</li>
+            <li>n8n workflow logic</li>
+            <li>Trello card creation</li>
+            <li>QA process improvement</li>
+          </ul>
+
+          <div class="project-tools">
+            <span>n8n</span>
+            <span>Google Sheets</span>
+            <span>Trello</span>
+          </div>
+
+          <div class="project-links">
+            <a href="#" target="_blank">Coming soon</a>
+          </div>
+        </article>
+
+        <article class="project-card neon-card">
+          <p class="project-label">In Progress</p>
+          <h3>Job Search Automation</h3>
+
+          <p>
+            Automation project to collect, filter and organize QA job opportunities
+            for New Zealand.
+          </p>
+
+          <ul>
+            <li>Job alerts</li>
+            <li>Filtering logic</li>
+            <li>Google Sheets tracking</li>
+            <li>AI-assisted review</li>
+          </ul>
+
+          <div class="project-tools">
+            <span>n8n</span>
+            <span>Gmail</span>
+            <span>AI</span>
+          </div>
+
+          <div class="project-links">
+            <a href="#" target="_blank">Coming soon</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+  
+    
+    <!-- CREATIVE WORK -->
+<section id="creative" class="section creative-section">
+  <div class="section-title">
+    <p class="eyebrow">Creative Portfolio</p>
+    <h2>Creative Work</h2>
+
+    <p>
+      Creative projects combining storytelling, visual design and
+      AI-assisted illustration.
+    </p>
+  </div>
+
+  <div class="project-grid creative-grid">
+
+    <article class="project-card creative-card neon-card">
+
+      <!-- GALERÍA DEL CÓMIC -->
+      <div
+        class="project-gallery creative-project-gallery"
+        id="rockyGallery"
+      >
+
+        <!-- PORTADA VISIBLE -->
+        <button
+          class="gallery-thumb creative-cover"
+          data-full="assets/creative/rocky-cover.png"
+          data-caption="Rocky y Bengala — Comic Cover"
+          type="button"
+          aria-label="Open Rocky y Bengala gallery"
+        >
+          <img
+            src="assets/creative/rocky-cover.png"
+            alt="Rocky y Bengala children's comic cover"
+          />
+        </button>
+
+        <!-- IMAGEN 2: OCULTA, PERO APARECE EN LA GALERÍA -->
+        <button
+          class="gallery-thumb"
+          data-full="assets/creative/rocky-cover.png"
+          data-caption="Rocky y Bengala — Comic Preview"
+          type="button"
+          hidden
+        >
+          <img
+            src="assets/creative/rocky-cover.png"
+            alt="Rocky y Bengala comic preview page"
+          />
+        </button>
+
+        <!-- IMAGEN 3: OCULTA, PERO APARECE EN LA GALERÍA -->
+        <button
+          class="gallery-thumb"
+          data-full="assets/creative/rocky-cover.png"
+          data-caption="Rocky y Bengala — Fantasy World"
+          type="button"
+          hidden
+        >
+          <img
+            src="assets/creative/rocky-cover.png"
+            alt="Rocky and Bengala inside the fantasy world"
+          />
+        </button>
+
+      </div>
+
+      <p class="project-label">Children’s Comic · In Progress</p>
+
+      <h3>Rocky y Bengala</h3>
+
+      <p>
+        A children’s comic about creativity, friendship and building
+        a healthier relationship with screens.
+      </p>
+
+      <ul class="project-checklist">
+        <li>Character and world design</li>
+        <li>Children’s visual storytelling</li>
+        <li>AI-assisted illustration</li>
+        <li>Educational and emotional themes</li>
+      </ul>
+
+      <div class="creative-actions">
+
+        <!-- ABRE LA MISMA GALERÍA -->
+        <button
+          class="button primary creative-view-button"
+          type="button"
+          data-gallery-open="rockyGallery"
+          data-event="view_comic_preview"
+        >
+          View comic preview
+        </button>
+
+        <!-- FUTURA COMPRA -->
+        <span
+          class="button secondary creative-buy-disabled"
+          aria-disabled="true"
+        >
+          Buy the comic · Coming soon
+        </span>
+
+      </div>
+
+    </article>
+
+  </div>
+</section>
+
+
+  <!-- CERTIFICATES -->
+<section id="certificates" class="section certificates-section">
+  <div class="section-title certificates-title">
+    <p class="eyebrow">Education & Certifications</p>
+    <h2>Certificates & Learning</h2>
+    <p>
+      Diplomas, courses and learning milestones connected to QA, automation,
+      AI workflows and software testing.
+    </p>
+    <p class="certificate-swipe-hint">Swipe to view more certificates →</p>
+  </div>
+
+  <div class="diploma-carousel">
+
+    <div
+      class="diploma-track"
+      id="diplomaTrack"
+      role="region"
+      aria-label="Certificates carousel. Swipe horizontally to view more certificates."
+      tabindex="0"
+    >
+      <article class="diploma-slide">
+        <img src="assets/certificates/University.png" alt="Technology National Univercity certificate" />
+      </article>
+
+      <article class="diploma-slide">
+        <img src="assets/certificates/XAcademy.png" alt="Automation QA XAcademy" />
+      </article>
+
+      <article class="diploma-slide">
+        <img src="assets/certificates/ManualQA.png" alt="Coderhouse Software Testing certificate" />
+      </article>
+
+      <article class="diploma-slide">
+        <img src="assets/certificates/BaAnalyst.png" alt="Argentinian goberment QA analyst" />
+      </article>
+
+      <article class="diploma-slide">
+        <img src="assets/certificates/AutomationTesting.png" alt="QA Academy Automation Testing" />
+      </article>
+
+      <article class="diploma-slide">
+        <img src="assets/certificates/webDeveloper.jpeg" alt="Web developer" />
+      </article>
+
+      <article class="diploma-slide">
+        <img src="assets/certificates/javascript.jpeg" alt="Javascript" />
+      </article>
+
+
+      <article class="diploma-slide">
+        <img src="assets/certificates/react.jpeg" alt="Web developer with React" />
+      </article>
+
+      <article class="diploma-slide">
+        <img src="assets/certificates/reactJs.jpeg" alt="React JS" />
+      </article>
+    </div>
+
+  </div>
+</section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+    <div class="contact-layout">
+    <div class="contact-copy">
+      <p class="eyebrow">Contact</p>
+      <h2>Let’s connect</h2>
+
+      <p>
+        Open to QA, QA Automation and AI opportunities.
+      </p>
+
+      <div class="contact-links">
+        <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+        <a href="mailto:workqaporfolio@gmail.com">Email</a>
+      </div>
+    </div>
+
+    <div class="contact-animation">
+      <img
+        src="assets/animation/qa-robot-contact.gif"
+        alt="Pixel art animation of a QA tester detecting a robot bug"
+      />
+    </div>
+  </div>
+</section>
+<!-- PROJECT SCREENSHOT GALLERY MODAL -->
+<div class="gallery-modal" id="galleryModal" aria-hidden="true">
+  <div class="gallery-overlay" id="galleryOverlay"></div>
+
+  <div class="gallery-content" role="dialog" aria-modal="true">
+    <button class="gallery-close" id="galleryClose" type="button" aria-label="Close gallery">
+      ×
+    </button>
+
+    <div class="gallery-header">
+      <p class="eyebrow">Project Evidence</p>
+      <h3 id="galleryTitle">Project Screenshots</h3>
+      <p id="galleryDescription">
+        Screenshots showing QA documentation, test evidence and workflow.
+      </p>
+    </div>
+
+    <div class="gallery-viewer">
+      <button class="gallery-arrow gallery-prev" id="galleryPrev" type="button" aria-label="Previous image">
+        ‹
+      </button>
+
+      <img id="galleryImage" src="" alt="Project screenshot" />
+
+      <button class="gallery-arrow gallery-next" id="galleryNext" type="button" aria-label="Next image">
+        ›
+      </button>
+    </div>
+
+    <div class="gallery-footer">
+      <span id="galleryCounter">1 / 1</span>
+    </div>
+  </div>
+</div>
+  </main>
+  <script>
+  document.addEventListener("click", function (event) {
+    const trackedElement = event.target.closest("[data-event]");
+
+    if (!trackedElement || typeof gtag !== "function") {
+      return;
+    }
+
+    gtag("event", trackedElement.dataset.event, {
+      link_text: trackedElement.textContent.trim(),
+      link_url: trackedElement.href || ""
+    });
+  });
+</script>
+<script src="script.js"></script>
+
+<script>
+(() => {
+  "use strict";
+
+  const projectGalleries = {
+    xacademy: {
+      title: "XAcademy QA Project",
+      description: "Test cases, bug reports, Trello workflow and QA evidence.",
+      images: [
+        {
+          src: "assets/projects/xacademy-main.png",
+          caption: "XAcademy QA Project dashboard"
+        },
+        {
+          src: "assets/projects/xacademy-testcases.png",
+          caption: "Test cases"
+        },
+        {
+          src: "assets/projects/xacademy-trello.png",
+          caption: "Trello workflow"
+        },
+        {
+          src: "assets/projects/xacademy-bug-report.png",
+          caption: "Bug report"
+        }
+      ]
+    },
+
+    cypress: {
+      title: "Cypress Automation Practice",
+      description: "Cypress test code, execution evidence and automation practice.",
+      images: [
+        {
+          src: "assets/projects/cypress-main.png",
+          caption: "Cypress Automation Practice"
+        },
+        {
+          src: "assets/projects/cypress-code.png",
+          caption: "Cypress test code"
+        },
+        {
+          src: "assets/projects/cypress-report.png",
+          caption: "Cypress execution report"
+        }
+      ]
+    },
+
+    postman: {
+      title: "Postman / API Testing",
+      description: "API requests, collections, JSON responses and validation evidence.",
+      images: [
+        {
+          src: "assets/projects/postman-main.png",
+          caption: "Postman API Testing"
+        },
+        {
+          src: "assets/projects/postman-collection.png",
+          caption: "Postman collection"
+        },
+        {
+          src: "assets/projects/postman-response.png",
+          caption: "API response"
+        }
+      ]
+    }
+  };
+
+  function initializeGalleryFix() {
+    const modal = document.getElementById("galleryModal");
+    const overlay = document.getElementById("galleryOverlay");
+    const closeButton = document.getElementById("galleryClose");
+    const previousButton = document.getElementById("galleryPrev");
+    const nextButton = document.getElementById("galleryNext");
+    const image = document.getElementById("galleryImage");
+    const title = document.getElementById("galleryTitle");
+    const description = document.getElementById("galleryDescription");
+    const counter = document.getElementById("galleryCounter");
+
+    if (
+      !modal ||
+      !overlay ||
+      !closeButton ||
+      !previousButton ||
+      !nextButton ||
+      !image ||
+      !title ||
+      !description ||
+      !counter
+    ) {
+      console.error("Gallery could not start because the modal markup is incomplete.");
+      return;
+    }
+
+    if (modal.dataset.galleryFixReady === "true") {
+      return;
+    }
+
+    modal.dataset.galleryFixReady = "true";
+
+    let currentGallery = [];
+    let currentIndex = 0;
+    let currentTitle = "";
+    let currentDescription = "";
+    let opener = null;
+    let touchStartX = 0;
+    let touchStartY = 0;
+
+    function renderImage() {
+      const item = currentGallery[currentIndex];
+
+      if (!item) {
+        return;
+      }
+
+      image.src = item.src;
+      image.alt = item.caption || currentTitle || "Gallery image";
+      title.textContent = currentTitle || "Gallery";
+      description.textContent = item.caption || currentDescription || "";
+      counter.textContent = `${currentIndex + 1} / ${currentGallery.length}`;
+
+      const hasMultipleImages = currentGallery.length > 1;
+      previousButton.hidden = !hasMultipleImages;
+      nextButton.hidden = !hasMultipleImages;
+    }
+
+    function openGallery(items, galleryTitle, galleryDescription, startIndex, trigger) {
+      if (!Array.isArray(items) || items.length === 0) {
+        console.error("The selected gallery does not contain valid images.");
+        return;
+      }
+
+      currentGallery = items;
+      currentTitle = galleryTitle || "Gallery";
+      currentDescription = galleryDescription || "";
+      currentIndex = Math.min(
+        Math.max(Number(startIndex) || 0, 0),
+        currentGallery.length - 1
+      );
+      opener = trigger || document.activeElement;
+
+      renderImage();
+
+      modal.classList.add("active");
+      modal.setAttribute("aria-hidden", "false");
+      document.body.classList.add("gallery-open");
+      closeButton.focus();
+    }
+
+    function closeGallery() {
+      modal.classList.remove("active");
+      modal.setAttribute("aria-hidden", "true");
+      document.body.classList.remove("gallery-open");
+
+      image.removeAttribute("src");
+      currentGallery = [];
+      currentIndex = 0;
+
+      if (opener && typeof opener.focus === "function") {
+        opener.focus();
+      }
+
+      opener = null;
+    }
+
+    function showPreviousImage() {
+      if (currentGallery.length < 2) {
+        return;
+      }
+
+      currentIndex =
+        (currentIndex - 1 + currentGallery.length) %
+        currentGallery.length;
+
+      renderImage();
+    }
+
+    function showNextImage() {
+      if (currentGallery.length < 2) {
+        return;
+      }
+
+      currentIndex =
+        (currentIndex + 1) %
+        currentGallery.length;
+
+      renderImage();
+    }
+
+    function getComicGallery(galleryElement) {
+      const buttons = Array.from(
+        galleryElement.querySelectorAll(".gallery-thumb")
+      );
+
+      return buttons
+        .map((button) => {
+          const previewImage = button.querySelector("img");
+
+          return {
+            src:
+              button.dataset.full ||
+              previewImage?.getAttribute("src") ||
+              "",
+            caption:
+              button.dataset.caption ||
+              previewImage?.alt ||
+              ""
+          };
+        })
+        .filter((item) => item.src);
+    }
+
+    function openNamedProjectGallery(trigger) {
+      const galleryName = trigger.dataset.gallery;
+      const gallery = projectGalleries[galleryName];
+
+      if (!gallery) {
+        console.error(`Project gallery not found: ${galleryName}`);
+        return;
+      }
+
+      openGallery(
+        gallery.images,
+        gallery.title,
+        gallery.description,
+        0,
+        trigger
+      );
+    }
+
+    /*
+     * Capture phase guarantees this fix still works even if an older
+     * script attached incompatible gallery handlers.
+     */
+    document.addEventListener(
+      "click",
+      (event) => {
+        const projectTrigger = event.target.closest(".gallery-trigger");
+
+        if (projectTrigger) {
+          event.preventDefault();
+          openNamedProjectGallery(projectTrigger);
+          return;
+        }
+
+        const externalGalleryButton =
+          event.target.closest("[data-gallery-open]");
+
+        if (externalGalleryButton) {
+          event.preventDefault();
+
+          const galleryId =
+            externalGalleryButton.dataset.galleryOpen;
+
+          const galleryElement =
+            document.getElementById(galleryId);
+
+          if (!galleryElement) {
+            console.error(`Comic gallery not found: ${galleryId}`);
+            return;
+          }
+
+          openGallery(
+            getComicGallery(galleryElement),
+            "Rocky y Bengala",
+            "Comic preview",
+            0,
+            externalGalleryButton
+          );
+
+          return;
+        }
+
+        const comicItem = event.target.closest(
+          ".project-gallery .gallery-thumb"
+        );
+
+        if (comicItem) {
+          event.preventDefault();
+
+          const galleryElement =
+            comicItem.closest(".project-gallery");
+
+          const allItems = Array.from(
+            galleryElement.querySelectorAll(".gallery-thumb")
+          );
+
+          const selectedIndex =
+            Math.max(0, allItems.indexOf(comicItem));
+
+          openGallery(
+            getComicGallery(galleryElement),
+            "Rocky y Bengala",
+            "Comic preview",
+            selectedIndex,
+            comicItem
+          );
+        }
+      },
+      true
+    );
+
+    document.addEventListener("keydown", (event) => {
+      const projectTrigger =
+        event.target.closest?.(".gallery-trigger");
+
+      if (
+        projectTrigger &&
+        (event.key === "Enter" || event.key === " ")
+      ) {
+        event.preventDefault();
+        openNamedProjectGallery(projectTrigger);
+        return;
+      }
+
+      if (!modal.classList.contains("active")) {
+        return;
+      }
+
+      if (event.key === "Escape") {
+        closeGallery();
+      } else if (event.key === "ArrowLeft") {
+        showPreviousImage();
+      } else if (event.key === "ArrowRight") {
+        showNextImage();
+      }
+    });
+
+    closeButton.addEventListener("click", closeGallery);
+    overlay.addEventListener("click", closeGallery);
+    previousButton.addEventListener("click", showPreviousImage);
+    nextButton.addEventListener("click", showNextImage);
+
+    modal.addEventListener(
+      "touchstart",
+      (event) => {
+        const touch = event.changedTouches[0];
+        touchStartX = touch.clientX;
+        touchStartY = touch.clientY;
+      },
+      { passive: true }
+    );
+
+    modal.addEventListener(
+      "touchend",
+      (event) => {
+        if (currentGallery.length < 2) {
+          return;
+        }
+
+        const touch = event.changedTouches[0];
+        const horizontalMovement = touchStartX - touch.clientX;
+        const verticalMovement = touchStartY - touch.clientY;
+
+        if (
+          Math.abs(horizontalMovement) < 50 ||
+          Math.abs(horizontalMovement) <= Math.abs(verticalMovement)
+        ) {
+          return;
+        }
+
+        if (horizontalMovement > 0) {
+          showNextImage();
+        } else {
+          showPreviousImage();
+        }
+      },
+      { passive: true }
+    );
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initializeGalleryFix);
+  } else {
+    initializeGalleryFix();
+  }
+})();
+</script>
+
+</body>
+</html>
